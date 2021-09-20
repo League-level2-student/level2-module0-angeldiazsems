@@ -23,20 +23,35 @@ public class _00_ArrayCheatSheet {
 		
 		
 		//6. make an array of 50 integers
-		String array3[] = new String[50];
+		int array3[] = new int[50];
 		
-		for(int i = 0; i < array3.length;i++) {
-			System.out.println(array3[i]);
-		}
+		
 		//7. use a for loop to make every value of the integer array a random number
-		/*Random ran = new Random();
+		
+		Random ran = new Random();
 		for(int i = 0; i < array3.length;i++) {
 		array3[i] = ran.nextInt(50);
-}*/
+		}
+		int e = array3[0];
+		for(int i = 0; i < array3.length;i++) {
+			if(array3[i] < e) {
+				e=array3[i];
+			}
+		}
+		System.out.println(e);
 		//8. without printing the entire array, print only the smallest number in the array
 		
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		for(int i = 0; i < array3.length;i++) {
+		if(array3[i] > e)
+			e=array3[i];
+		}
+		System.out.println(e);
+		
+		
+		
+		
 	}
 }
