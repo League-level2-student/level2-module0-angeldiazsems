@@ -8,20 +8,26 @@ void setup() {
   //  because the developers don't know how programming is supposed to work.
 size(30,30);
   //3. initialize your array with the built in width variable
-  
+int[] array = new int[width];
   //4. initialize the ints in the array with random numbers
   //   from 0 to the built in height variable
+  int num = (int) random(0,height);
+ array = new int[num];
+
 
   //5. call the noStroke() method
-
+noStroke();
 }
 
 void draw() {
   //6. set the background color with background(r, g, b);
-
+background(123,200,234);
   //7. set the color for your graph
-
+color(43,34,94);
   //8. draw a rectangle for each int in your array.
+    for(int i = 0;i < array.length; i++){
+     rect( ,height,1,);
+    }
   //   the x value will be the current index in the array
   //   the y value will the height variable
   //   the width is 1 (one)
